@@ -1,4 +1,5 @@
 import * as vscode from 'vscode';
+import { HelloWorldPanel } from './HelloWorldPanel';
 
 export function activate(context: vscode.ExtensionContext) {
 
@@ -6,7 +7,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	context.subscriptions.push(
 		vscode.commands.registerCommand('vstodo.helloWorld', () => {
-			vscode.window.showInformationMessage('Hello from vsTodo!');
+			HelloWorldPanel.createOrShow(context.extensionUri);
 		})
 	);
 

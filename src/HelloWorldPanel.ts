@@ -166,7 +166,7 @@ export class HelloWorldPanel {
             <body>
              <h1>Hello World 😇</h1>
              <p>This is my first vscode extension..</p>
-             <input type="text" placeholder="Put your favorite song"/>
+             <input type="text" placeholder="Put your favorite song here"/>
              <button>SEND IT</button>
              </body>
 			</html>`;
